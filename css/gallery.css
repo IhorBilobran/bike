@@ -1,0 +1,230 @@
+@import url(fonts.css);
+@import url(moto-styles.css);
+
+.gallery {
+	background: #F6F6F6;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 17px;
+	padding: 40px 0;
+}
+
+
+
+.header {
+	position: relative;
+	background: #4D4D4D;
+	text-align: center;
+	overlfow: hidden;
+}
+
+.back {
+	width: 200px;
+	display:flex;
+	position: absolute;
+	top: -15px;
+	left: 20px;
+}
+
+.back:hover {
+	transform: scale(0.9);
+}
+
+.svg {
+	width: 30px;
+	height: 30px;
+	background: url(../images/arrow-l.svg);
+	background-size: cover;
+	float: left;
+	
+}
+
+.back a {
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 8px;
+	background: #666;
+	color: #000;
+	text-decoration: none;
+}
+
+.text {
+	padding: 30px 10px;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.website {
+	margin: 0 auto;
+	background: #fff;
+	max-width: 98%;
+	box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
+
+.grid {
+	padding: 10px;	
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	columns: 4; 
+
+}
+.grid .item {
+	height: 270px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	border-radius: 4px;
+	padding: 20px;
+	box-sizing: border-box;
+	color: white;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+}
+/*
+.grid .item:hover {
+	transform: scale(1.1);
+}*/
+
+.depiction p {
+	font: 40px "NautilusPompiliusRegular", sans-serif;
+	display: block;
+	text-align: center;
+	vertical-align: bottom;
+	color: #666;
+
+}
+
+.grid .item:nth-child(1), .item:nth-child(6), .item:nth-child(11), .item:nth-child(16) {
+	background: inherit;
+	height: 120px;
+}
+.grid .item:nth-child(2) {
+	background-image: url(../images/cbr-600-rr_2004_1.jpg);
+}
+.grid .item:nth-child(3) {
+	background-image: url(../images/rr/3.jpg)
+}
+.grid .item:nth-child(4) {
+	background-image: url(../images/rr/6.jpg)
+}
+.grid .item:nth-child(5) {
+	background-image: url(../images/rr/7.jpg)
+}
+.grid .item:nth-child(7) {
+	background-image: url(../images/red.jpg)
+}
+.grid .item:nth-child(8) {
+	background-image: url(../images/f4/8.jpg)
+}
+.grid .item:nth-child(9) {
+	background-image: url(../images/f4/5.jpg)
+}
+.grid .item:nth-child(10) {
+	background-image: url(../images/f4/7.jpg)
+}
+.grid .item:nth-child(12) {
+	background-image: url(../images/kawa2.jpg)
+}
+.grid .item:nth-child(13) {
+	background-image: url(../images/kaw/4.jpg)
+}
+.grid .item:nth-child(14) {
+	background-image: url(../images/kaw/3.jpg)
+}
+.grid .item:nth-child(15) {
+	background-image: url(../images/kaw/8.jpg)
+}
+.grid .item:nth-child(17) {
+	background-image: url(../images/suz2.jpg)
+}
+.grid .item:nth-child(18) {
+	background-image: url(../images/suz/4.jpg)
+}
+.grid .item:nth-child(19) {
+	background-image: url(../images/suz/6.jpg)
+}
+.grid .item:nth-child(20) {
+	background-image: url(../images/suz/3.jpg)
+}
+	
+
+.item:nth-child(1n) {
+	animation: a .7s ease-in 1.4s;
+	animation-fill-mode: forwards;
+}
+
+.item:nth-child(2n) {
+	animation: a .7s ease-in 1.3s;
+	animation-fill-mode: forwards;
+}
+
+.item:nth-child(3n) {
+	animation: a .7s ease-in 1.1s;
+	animation-fill-mode: forwards;
+}
+
+.item:nth-child(4n) {
+	animation: a .7s ease-in 1s;
+	animation-fill-mode: forwards;
+}
+
+.item:nth-child(5n) {
+	animation: a .7s ease-in .9s;
+	animation-fill-mode: forwards;
+}
+
+.grid .item:nth-child(1), .item:nth-child(6), .item:nth-child(11), .item:nth-child(16) {
+	animation: a .8s ease-in;
+	animation-fill-mode: forwards;
+
+	}
+
+@-webkit-keyframes a {
+		0% {
+	-webkit-transform: scale(0.3) rotateY(90deg);
+			transform: scale(0.3) rotateY(90deg);
+		}
+		60% {
+	-webkit-transform: scale(1.4);
+			transform: scale(1.4);
+		}
+		90% {
+	-webkit-transform: scale(0.9);
+			transform: scale(0.9);
+		}
+		100% {
+	opacity: 1;
+
+		}
+}
+
+@keyframes a {
+	0% {
+	opacity: 0;
+	-webkit-transform: scale(0.3) rotateY(90deg);
+			transform: scale(0.3) rotateY(90deg);
+		}
+		60% {
+	-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		90% {
+	-webkit-transform: scale(0.9);
+			transform: scale(0.9);
+		}
+		100% {
+	opacity: 1;
+		}
+}
+
+
+@media only screen and (max-width: 1220px) {
+   .grid {column-count: 2;}
+}
+
+@media only screen and (max-width: 700px) {
+   .grid {column-count: 1;}
+}

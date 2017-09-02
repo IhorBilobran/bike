@@ -1,0 +1,35 @@
+@import url(fonts.css);
+@import url(gallery.css);
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #F6F6F6;
+}
+
+.content {
+	padding: 20px 10px;
+	background: #F6F6F6;
+}
+
+.table-block table  {
+	margin-top: 20px;
+	width: 90%;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+table th, td {
+	padding: 20px;
+	border: 1px solid #4D4D4D;
+}
+
+table tr:nth-child(1) {
+	background-color: #D9D9D9;
+}
+
+table tr td:nth-child(1) {
+	background-color: #666;
+	font: bold 18px sans-serif;
+	color: #F6F6F6;
+}

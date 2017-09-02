@@ -1,0 +1,272 @@
+@import url(fonts.css);
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%; 
+	list-style: none;
+	                   /* размер шрифта всем одинаковый */
+}
+
+body {
+	background: rgb(0,0,0); /* Old browsers */
+background: -webkit-linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%);
+background: -o-linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%);
+background: linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#545454',GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat;
+	background-size: cover;
+	font: 18px "RobotoRegular", sans-serif;
+}
+
+/*===========Шапка сайту*/
+
+
+.main:after {
+	display: block;
+	content: '.';
+	visibility: hidden;
+
+}
+
+.header-name {
+	height: 130px;
+	background: url(../images/header2.jpg) no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+}
+.h1 {
+	position: relative;
+	top: 20px;
+	text-align: center;
+	font-family: "NautilusPompiliusRegular", sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #444;
+	background: #fff;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: .7;
+	margin: 0 20%;
+}
+
+.img {
+	background: url(../images/header1.jpg) no-repeat;
+	background-size: cover;
+	height: 130px;
+}
+
+.header-nav {
+	height: 130px;
+	background: black;
+	padding: 0;
+}
+
+.navigation{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-top: solid 2px silver;
+	border-left: solid 2px silver;
+	border-top-left-radius: 20px;
+}
+
+.navigation a {
+	font: bold 22px "RobotoRegular", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 50px;
+	margin-right: -5px;
+	margin-bottom: 0;
+	color: #fff;
+	background: silver;
+}
+.navigation a:first-child {
+	border-top-left-radius: 18px;
+
+}
+
+.navigation a:hover {
+	background: #A4A4A4;
+	color:#333;
+	transition: all .3s ease-in-out;
+}
+
+/*===========Інфа про байк*/
+
+.info {
+	border-radius: 15px;
+	background: #C0C0C0;
+	text-indent: 30px;
+	float: right;
+}
+
+.info img {
+	float: left;
+	padding: 30px;
+}
+
+.info h1 {
+	text-transform: uppercase;
+	font: bold 30px "RobotoRegular", sans-serif;
+	text-align: center;
+	padding: 30px;
+}
+
+.info p:last-child {
+	padding-bottom: 15px;
+}
+
+.img-container {
+	background: url(../images/bg-menu.jpg) no-repeat;
+	background-size: cover;
+}
+
+.image-block {
+	opacity: 0;
+	animation: imgOpacity 1.3s ease-in 0.2s forwards;
+}
+
+@keyframes imgOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.image-size {
+	padding-top: 45px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.video-r p {
+	font-size: 18px;
+	text-indent: 30px;
+	padding: 14px;
+	color: silver;
+}
+
+.video-r a {
+	font-size: 20px;
+	color: #7b0000;
+
+}
+
+.video-r a:hover {
+	font-size: 21px;
+	color: #FFF;
+}
+
+span {
+	background: #C0C0C0;
+	text-transform: uppercase;
+	color: #141414;
+	padding: 5px 5px;
+}
+
+
+.columns {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	column-count: 3;/*
+	column-gap: 45px;*/
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: black;
+	color: #ccc;
+}
+
+.columns-g {
+	column-count: 3;
+	column-span: all;
+}
+
+.gallery img {
+	padding: 10px;
+}
+
+/*important*/
+
+@media only screen and (max-width: 1200px) {
+   .columns-g {column-count: 2;}
+   .columns {column-count: 2;}
+}
+
+@media only screen and (max-width: 600px) {
+   .columns-g {column-count: 1;}
+   .columns {column-count: 1;}
+}
+
+.footer {	
+	border-top: 2px solid #333;
+	background: #B2B2B2;
+	padding-top: 	10px;
+	display: inline-flex;
+	height: 80px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+}
+
+.footer .d {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: inline-flex;
+	padding-right: 10px;
+}
+
+.footer p {
+	text-align: center;
+}
+
+.f {
+	width: 50px;
+	height: 50px;
+	background: url(../images/facebook-logo.svg) no-repeat;
+	background-size: cover;
+	margin: 1px;
+}
+
+.g {
+	width: 47px;
+	height: 47px;
+	background: url(../images/git.svg) no-repeat;
+	background-size: cover;
+	margin: 1px;
+}
+
+.as:hover {
+	transform: scale(1.1);
+	transition: all .2s ease-in-out;
+}
+
+.arrow {
+	position: absolute;
+	top: -90px;
+	left: 50%; 
+	background: #B2B2B2;
+	border-radius: 50%;
+	animation: animation-arrow .6s ease-in-out infinite alternate;
+}
+
+@keyframes animation-arrow {
+	0% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}

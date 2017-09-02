@@ -1,0 +1,263 @@
+
+@import url(fonts.css);
+@import url(slider.css);
+@import url(moto-styles.css);
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 17px;
+	height: 100%;
+	color: #D7D7D7;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,0e0e0e+26,545454+99 */
+	background: rgb(0,0,0); /* Old browsers */
+background: -webkit-linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%);
+background: -o-linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%);
+background: linear-gradient(rgba(0,0,0,1) 0%, rgba(14,14,14,1) 26%, rgba(84,84,84,1) 99%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#545454',GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat;
+	background-size: cover;
+	perspective:1000px;
+}
+
+.all {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.outline {
+	outline: 1px solid #f00;
+}
+/*=========Верх сайту*/
+.header {
+	background: url(../images/header.jpg) no-repeat;
+	background-size: cover;
+	height: 290px;
+	margin-bottom: 20px;
+	position: relative;
+
+}
+.h1 {
+	text-align: center;
+	font-family: "NautilusPompiliusRegular", sans-serif;
+	font-size: 50px;
+	font-weight: bolder;
+	color: #444;
+	background: #fff;
+	margin-top: 70px;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: .9;
+}
+
+
+	.header p {		
+		font: italic 18px "NautilusPompiliusRegular", sans-serif;
+		position: absolute;
+		bottom: 0;
+	}
+
+/*=========Ліва колонка*/
+.col-md-7 {	
+	padding: 0;
+}
+	
+
+	.txt {
+		position: relative;
+		padding: 10px;
+		font-family: "NautilusPompiliusRegular", sans-serif;
+	}
+
+.container-fluid {
+	padding: 0;
+}
+
+/*=========Навігація*/
+
+.menu {
+	background: #333;
+	position: relative;
+	padding: 20px;
+	margin-top: 100px;
+	font-size: 2em;
+	text-align: center;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.go-galerry, .go-statistic {
+	display: inline-flex;
+}
+	.go-galerry a {
+		border: 3px solid #444;
+		border-radius: 10px;
+		background: #000;
+		text-decoration: none;
+		color: #E5E5E5;
+		padding: 10px;
+		margin-right: 15px;
+		margin-bottom: 10px;	
+	}
+	.go-galerry a:hover {		
+		background: #666;
+		transition: background .3s ease-in-out;	
+	}
+		.go-galerry:hover {
+			transform: scale(1.1);
+			transition: transform .3s ease-in-out;	
+		}
+
+	.go-statistic a {
+		border: 3px solid #444;
+		border-radius: 10px;
+		background: #000;
+		text-decoration: none;
+		color: #E5E5E5;
+		padding: 10px;
+
+	}
+		.go-statistic a:hover {
+		background: #666;
+		transition: background .3s ease-in-out;	
+	}
+		.go-statistic:hover {
+			transform: scale(1.1);
+			transition: transform .3s ease-in-out;	
+		}
+
+/*==========Права колонка*/
+
+.nav-menu {
+	background: url(../images/bg-menu.jpg) no-repeat;
+	background-size: cover;
+	padding: 30px 20px;
+	display: block;
+}
+.col-md-5 {
+	display: block;
+}
+
+@media only screen and (max-width: 1500px) {
+   .size-moto {max-height: 300px}
+}
+@media only screen and (max-width: 1350px) {
+   .size-moto {max-height: 270px}
+}
+@media only screen and (max-width: 1100px) {
+   .size-moto {max-height: 210px}
+}
+@media only screen and (max-width: 1000px) {
+   .size-moto {max-height: 170px}
+}
+
+	.size-moto {
+		width: 100%;	
+		height: 340px;
+
+	}
+
+	.description {
+		width: 290px;
+		height: 50px;
+		font-weight: bold;
+		font-size: 22px;
+		text-align: center;
+		margin: 0 auto;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		display: hidden;
+	}
+
+		.description a{
+			padding:10px;
+			text-decoration: none;
+			color: #C9C9C9;
+
+		}
+	
+	.description:hover {
+		animation: my-a .4s ease-in forwards;
+		transform-origin: center top;
+	}
+	.description a:hover {
+		color: #333;
+		transition: all .4s ease-in-out;
+	}
+	
+		@keyframes my-a {
+			0% {
+				transform: rotateX(-60deg);
+			}
+			100% {
+				transform: rotateX(0deg);
+				background: #fff;
+				
+			}
+		}
+
+	.moto-menu-1 {
+		margin-top: 40px;
+		background: url(../images/cbr-600-rr_2004_1.jpg) no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		
+	}
+
+	.moto-menu-2 {
+		margin-top: 40px;
+		background: url(../images/red.jpg) no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	.moto-menu-3 {
+		margin-top: 40px;
+		background: url(../images/kawa.jpg) no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	.moto-menu-5 {
+		margin-top: 40px;
+		background: url(../images/yamaha.jpg) no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	.moto-menu-4 {
+		margin-top: 40px;
+		background: url(../images/Suzuki.jpg) no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border: 0px #ddd	;
+	}
+
+	.im {
+		width: 100%;
+		height: 29px;
+		background: url(../images/chain.png) repeat;
+		background-size: contain;
+	}
+
+.clear-fix {
+	display: block;
+	content: '.';
+	visibility: hidden;
+	clear: both;
+}
+
+.h {
+	height: 450px;
+	width: 100%;
+}
+.h2 {
+	height: 400px;
+	width: 100%;
+}
+
+#footer {	
+	color: #333;
+}

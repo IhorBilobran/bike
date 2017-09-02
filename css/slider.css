@@ -1,0 +1,123 @@
+.slider {
+	position: relative;
+}
+
+.slider-size {
+	padding: 0;
+	height: 450px;
+	width: 100%;
+
+}
+
+.sl1-image-1 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider1-1.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 40;
+	animation: img .8s ease-in-out 8s 1 normal forwards;
+	
+}
+
+.sl1-image-2 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider1-2.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 30;
+	animation: img .8s ease-in-out 16s 1 normal forwards;
+}
+
+.sl1-image-3 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider1-3.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 20;
+	animation: img .8s ease-in-out 24s 1 normal forwards;
+}
+
+.sl1-image-4 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider1-4.jpg);
+	background-size: cover;
+	z-index: 10;
+	background-position: center;
+}
+
+@keyframes img {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.slider2 {
+	position: relative;
+}
+
+.sl2-image-1 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-0.jpg);
+	background-size: cover;
+
+background-position: center;	z-index: 40;
+	animation: img .8s ease-in-out 6s 1 normal forwards;
+	
+}
+
+.sl2-image-2 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-1.jpg);
+	background-size: cover;
+
+background-position: center;	z-index: 30;
+	animation: img .8s ease-in-out 14s 1 normal forwards;
+}
+
+.sl2-image-3 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-2.jpg);
+	background-size: cover;
+
+background-position: center;	z-index: 20;
+	animation: img .8s ease-in-out 22s 1 normal forwards;
+}
+
+.sl2-image-4 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-3.jpg);
+	background-size: cover;
+
+background-position: center;	z-index: 10;
+	animation: img .8s ease-in-out 30s 1 normal forwards;
+}
+
+.sl2-image-5 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-4.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 9;
+	animation: img .8s ease-in-out 36s 1 normal forwards;
+}
+
+.sl2-image-6 {
+	position: absolute;
+	float: left;
+	background: url(../images/slider2-5.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 8;
+}
